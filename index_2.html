@@ -1,0 +1,58 @@
+<html>
+<head> <title> I.P.E.M. N°122 </title> 
+</head>
+<body bgcolor="lightyellow"> 
+<FORM METHOD="LINK" ACTION="Bienvenidos_1.html"> <INPUT style="border: #006 8px solid; background-color: #FF99FF"font-size=10 TYPE="submit"  VALUE="Bienvenidos" > </FORM> 
+<FORM METHOD="LINK" ACTION="visitenos.html"> <INPUT style="border: #006 8px solid; background-color: #FF99FF"font-size=10 TYPE="submit"  VALUE="Visitenos" > </FORM> 
+
+<CENTER> <H1> <Font color= "blue"> NUESTRA ESCUELA  </Font color= "blue"> </H1> </CENTER> 
+<CENTER> <H3> <Font color= "blue"> Has clic sobre la imagen para ver nuestros trabajos  </Font color= "blue"> </H1> </CENTER> 
+
+<center > <img src="Imagen1.jpg" width="50% "  onclick="proxima()"> <img>  </center>
+
+
+<script>
+
+var img = document.getElementsByTagName("img")[0];
+    imgActual = 0,
+    imagenes = ["Imagen1.jpg","Imagen2.jpg","Imagen3.jpg","Imagen4.jpg","Imagen5.jpg","Imagen6.jpg","Imagen7.jpg","Imagen8.jpg"];
+
+function proxima() {
+    imgActual = (imgActual + 1) % 8;
+    img.src = imagenes[imgActual];
+}
+
+</script>
+<CENTER> <H2> I.P.E.M. Nº 122 "DIEGO GÓMEZ CASCO" </H2> </CENTER> 
+<HR WIDTH=800 SIZE=8 ALIGN=CENTER COLOR="BLUE"> 
+<P>  <pre>
+
+<a href="https://es-la.facebook.com/ipem.diegogomezcasco">IPEM 122 DIEGO GOMEZ CASCO</a>
+
+<a href="mailto: cattivo.robot@gmail.com ">Mandar email</a>
+
+ 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rqFbl1eYrrc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+La historia de Diego Gomez Casco 
+
+</P>  </pre>
+
+<img src="bajo_construccion.gif">
+
+
+
+
+
+ 
+
+        <form>
+
+		<label> Su e-mail: </label>
+		<input tape="text" name="email"><br>
+		<label> Comentario:</label><br>
+		<textarea name="comentario"></textarea><br>
+		<input type="submit" value="Enviar" onclick="alert(&#39;gracias&#39;)">
+	</form>
+</body> 
+</html>
